@@ -32,10 +32,18 @@ const App = () => {
                         </Switch>
                     </div>
                 </Layout>
-           </div>
            <div className="footer">
-
-</div>
+                <Typography.Title level={5} style={{color: 'white', TextAlign: 'center'}}>
+                    Crypto Dashboard <br/>
+                    All rights reserved
+                </Typography.Title>
+                <Space>
+                    <Link to="/">Home</Link>
+                    <Link to="/exchanges">Exchanges</Link>
+                    <Link to="/news">News</Link>
+                </Space>
+            </div>
+           </div>
         </div>
     )
 }
