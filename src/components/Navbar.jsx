@@ -7,6 +7,8 @@ import {
   BulbOutlined,
   FundOutlined,
   MenuOutlined,
+  EyeOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
 
 import icon from "../images/cryptocurrency.png";
@@ -63,6 +65,12 @@ const Navbar = () => {
           </Menu.Item>
           <Menu.Item icon={<BulbOutlined />}>
             <Link to="/news">News</Link>
+          </Menu.Item>
+          <Menu.Item icon={<UserOutlined />} style={{ pointerEvents: "none" }}>
+            <Link>Login</Link> Coming soon...
+          </Menu.Item>
+          <Menu.Item icon={<EyeOutlined />} style={{ pointerEvents: "none" }}>
+            <Link>Watchlist</Link> Coming soon...
           </Menu.Item>
         </Menu>
       )}
